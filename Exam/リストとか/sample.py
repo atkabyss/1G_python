@@ -1,0 +1,57 @@
+fruits = [
+    {
+        'Name':'Orange',
+        'Variety':[
+            {
+                'Name':'早生',
+                'Price':100
+            },
+            {
+                'Name':'温州',
+                'Price':110
+            },
+            {
+                'Name':'清見',
+                'Price':120
+            }
+        ]
+    },
+    {
+        'Name':'Apple',
+        'Variety':[
+            {
+                'Name':'ふじ',
+                'Price':200
+            },
+            {
+                'Name':'つがる',
+                'Price':210
+            },
+            {
+                'Name':'ジョナゴールド',
+                'Price':220
+            }
+        ]
+    },
+    {
+        'Name':'Grape',
+        'Variety':[
+            {
+                'Name':'ピオーネ',
+                'Price':300
+            },
+            {
+                'Name':'デラウエア',
+                'Price':310
+            },
+            {
+                'Name':'シャインマスカット',
+                'Price':320
+            }
+        ]
+    }
+]
+
+for f in fruits:
+    for g in f['Variety']:
+        print(g["Name"])
